@@ -1,0 +1,165 @@
+body {
+    font-family: 'Roboto', sans-serif;  
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;   
+    background: linear-gradient(135deg, #2175a8, #f4f4f4);
+    color: #333333;
+}
+
+header {
+    background: #2175a8;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(90deg, #2175a8, #1e90ff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #fcfbfb;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #2175a8;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #3f667e;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(90deg, #35424a, #1e90ff);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.imagenes img {
+    margin: 12px;
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(19, 12, 12, 0.1); 
+}
+.imagenes img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;700&display=swap');
+
+
+.font-lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.enlaces a {
+    color: #1e90ff;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #1e90ff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.enlaces a:hover {
+    background-color: #1e90ff;
+    color: #ffffff;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #555;
+}
